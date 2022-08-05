@@ -1,0 +1,27 @@
+{
+  "name": "crud_greys_anatomy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoFogaca/crud_greys_anatomy.git"
+  },
+  "author": "Yago Fogaça",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoFogaca/crud_greys_anatomy/issues"
+  },
+  "homepage": "https://github.com/YagoFogaca/crud_greys_anatomy#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
