@@ -1,8 +1,8 @@
 {
-    "trailingComma": "all",
-    "singleQuote": true,
-    "endOfLine": "lf",
-    "tabWidth": 2,
-    "arrowParens": "always",
-    "printWidth": 100
+  "trailingComma": "all",
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "printWidth": 120
 }
