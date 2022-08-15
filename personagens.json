@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "62f58dd9b90fdea1102328cf",
+    "nome": "Derek",
+    "sobrenome": "Shepherd",
+    "idade": 49,
+    "status": "Morto",
+    "especialidade": "Neurocirurgião",
+    "primeiro_temp": 1,
+    "ultimo_temp": 11
+  },
+  {
+    "_id": "62f58dd9b90fdea1102328d0",
+    "nome": "Cristina",
+    "sobrenome": "Yang",
+    "idade": 34,
+    "status": "Viva",
+    "especialidade": "Cirurgiã cárdiotorácica",
+    "primeiro_temp": 1,
+    "ultimo_temp": 10
+  },
+  {
+    "_id": "62f58dd9b90fdea1102328d1",
+    "nome": "Meredith",
+    "sobrenome": "Grey",
+    "idade": 44,
+    "status": "Viva",
+    "especialidade": "Neurocirurgiã",
+    "primeiro_temp": 1,
+    "ultimo_temp": 18
+  },
+  {
+    "_id": "62f58dd9b90fdea1102328d2",
+    "nome": "Alex",
+    "sobrenome": "Karev",
+    "idade": 52,
+    "status": "Vivo",
+    "especialidade": "Pediátrica",
+    "primeiro_temp": 1,
+    "ultimo_temp": 16
+  },
+  {
+    "_id": "62f58dd9b90fdea1102328d3",
+    "nome": "George",
+    "sobrenome": "O'Malley",
+    "idade": 29,
+    "status": "Morto",
+    "especialidade": "Militar",
+    "primeiro_temp": 1,
+    "ultimo_temp": 5
+  }
+]
