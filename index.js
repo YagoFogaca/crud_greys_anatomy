@@ -4,6 +4,10 @@ const cors = require('cors');
 
 const routes = require('./src/routes/personagem.route');
 
+const connectDatabase = require('./src/dataBase/database');
+
+connectDatabase();
+
 const port = 3000;
 
 const app = express();

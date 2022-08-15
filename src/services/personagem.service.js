@@ -1,43 +1,33 @@
-const personagens = require('../mocks/personagens.mocks');
+const personagens = require('../models/Personagens');
 
-function getAllPersonagensService() {
-  return personagens;
+async function getAllPersonagensService() {
+  const personagensResults = await personagens.find();
+
+  return personagensResults;
 }
 
-function getByIdPersonagemService(id) {
-  let personagem = personagens.find((item) => item.id === id);
-
-  if (personagem === undefined) {
-    personagem = 'Personagem não encontrado, tente por outro ID';
-  }
+async function getByIdPersonagemService(id) {
+  const personagem = await personagens.findById(id);
 
   return personagem;
 }
 
-function createPersonagemService(personagem) {
-  const novoId = personagens.length + 1;
+async function createPersonagemService(personagem) {
+  const novoPersonagem = await personagens.create(personagem);
 
-  personagem.id = 'teste';
-
-  personagem.id = novoId;
-
-  personagens.push(personagem);
-
-  return personagem;
+  return novoPersonagem;
 }
 
-function updatePersonagemService(id, personagemUpdate) {
-  personagemUpdate['id'] = id;
+async function updatePersonagemService(id, personagemUpdate) {
+  const updatePersonagem = await personagens.findByIdAndUpdate(id, personagemUpdate);
 
-  const personagemIndex = personagens.findIndex((personagem) => personagem.id === id);
-
-  return (personagens[personagemIndex] = personagemUpdate);
+  return updatePersonagem;
 }
 
-function deletePersonagemService(id) {
-  const personagemIndex = personagens.findIndex((personagem) => personagem.id == id);
+async function deletePersonagemService(id) {
+  const personagemIndex = await personagens.findByIdAndDelete(id);
 
-  return personagens.splice(personagemIndex, 1);
+  return personagemIndex;
 }
 
 module.exports = {
