@@ -1,23 +1,23 @@
-# Back-end CRUD memória Grey's Anatomy
+# Backend CRUD MongoDB Grey's Anatomy
 
-## Critérios de Avaliação
+### Endpoints
 
-### Endpoints (4 pontos)
+- [GET] Leitura de todas os personagens : http://localhost:3000/personagens/todos-personagens
+- [GET] Leitura de personagens individuais : http://localhost:3000/personagens/personagem/:id
+- [POST] Criação de personagens : http://localhost:3000/personagens/create
+- [PUT] Edição de personagens por ID : http://localhost:3000/personagens/update/:id
+- [DELETE] Exclusão de personagens por ID : http://localhost:3000/personagens/delete/:id
 
-- [GET] Leitura de todas os personagens (0,8 pontos);
-- [GET] Leitura de personagens individuais (por ID) (0,8 pontos).
-- [POST] Criação de personagens (0,8 pontos);
-- [PUT] Edição de personagens por ID (0,8 pontos);
-- [DELETE] Exclusão de personagens por ID (0,8 pontos).
+### ID
 
-### Requisitos (6 pontos)
+- 1º Personagem 62f58dd9b90fdea1102328cf;
+- 2º Personagem 62f58dd9b90fdea1102328d0
+- 3º Personagem 62f58dd9b90fdea1102328d1
+- 4º Personagem 62f58dd9b90fdea1102328d2
+- 5º Personagem 62f58dd9b90fdea1102328d3
 
-- Lista em memória (2 pontos);
-- CORS - Liberado (2 pontos);
-- Formatação do código utilizando o Prettier (2 pontos).
+### Tecnologias na API
 
-### Dados do Certificado
-
-- Linguagem: JavaScript
-- Tecnologias: NodeJs e Express
-- Carga horária: 20 horas
+- JavaScript
+- Node.js com o framework Express
+- MongoDB com a biblioteca de (ODM) Mongoose
